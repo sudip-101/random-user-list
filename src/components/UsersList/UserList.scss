@@ -1,0 +1,67 @@
+@import "../../variables";
+
+// .user-table-section {
+//   width: 100%;
+//   overflow: hidden;
+// }
+
+.user-table-container {
+  width: 100%;
+  position: relative;
+  margin-block: 40px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+.table-head {
+  background-color: $accent-dark;
+}
+
+.table-head-row {
+  text-align: left;
+  color: $white;
+
+  th:first-child {
+    border-top-left-radius: 16px;
+  }
+  th:last-child {
+    border-top-right-radius: 16px;
+  }
+}
+
+.table-body {
+  background-color: $lightgrey;
+}
+
+.table-body-row:last-child {
+  td:first-child {
+    border-bottom-left-radius: 16px;
+  }
+  td:last-child {
+    border-bottom-right-radius: 16px;
+  }
+}
+
+.table-row-item {
+  padding: 24px;
+  min-width: 200px;
+}
+
+.user-link {
+  color: $accent;
+}
+
+@media only screen and (max-width: 1024px) {
+  .user-table-container {
+    overflow-x: scroll;
+  }
+}
